@@ -1,0 +1,7 @@
+The Residential Occupied Neighborhood Simulation (RON Sim) models the energy consumption of a collection of individual houses and their occupants for the purpose of load management research.  A primary use for the simulation is to model the collective response to load management events and tailor events to improve the power consumption characteristics.  Most recently, we used advanced controls and game theory to modify the power consumption characteristics using real time pricing.
+
+Each house model contains a simplified five state dynamic simulation of the heat transfer between the HVAC system, building materials, and environment.  Further, the inside temperature of each house is controlled with thermostat software that included advanced learning and price responsiveness.  The original thermostat software was based on the Programmable Communicating Thermostat (PCT) proof-of-concept design, but since creation, it has been modified heavily to include more intelligence.
+
+Each house contains occupants, modeled using stochastic state machines.  The occupants have individual (random) work schedules and comfort preferences.  Further, the occupants interact with their respective thermostat.
+
+The original RON Sim was written in c, but the difficulty with cross platform distributions has driven a Java version.
